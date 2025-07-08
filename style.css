@@ -65,3 +65,11 @@ header{
       display: flex;
       justify-content: center;
 }
+#cover-image-section{
+      width: 70%;
+      margin: 50px auto;
+}
+#cover-image-section img{
+      width: 100%;
+      display: block;
+}
