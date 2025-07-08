@@ -36,3 +36,32 @@ header{
       cursor: pointer;
       transition: 1s;
 }
+
+#highlight-section{
+     
+      width: 70%;
+      margin: 0 auto;
+}
+
+#highlight-section >h2 {
+      font-size: 50px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px 2px #ec9090;
+
+}
+
+#highlight-section >p {
+      color: rgb(124, 122, 122);
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 25px
+      
+}
+
+#buy-now-btn{
+      display: flex;
+      justify-content: center;
+}
