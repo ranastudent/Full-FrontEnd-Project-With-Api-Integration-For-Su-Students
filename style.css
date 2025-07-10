@@ -124,20 +124,41 @@ header{
       margin: 50px auto;
       gap: 20px;
 }
-.card{
-      border: 1px solid gray;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
+.card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+  height: 60px;
+}
+
+
 
 .card-image {
       width: 100%;
+      margin: 10px auto;
       display: flex;
       justify-content: center;
       border-radius: 10px;
       background-color: white ;
-      margin-bottom: 20px;
 }
 
 .card-image:hover {
@@ -147,7 +168,8 @@ header{
 
 .card-image img {
       width: 100%;
-      height: 300px;
+      height: 200px;
+      object-fit: contain;
 }
 
 .card-price{
@@ -161,4 +183,126 @@ header{
       display: flex;
       justify-content: center;
 }
+
+
+
+
+#loading-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      margin: 0 auto;
+}
+
+.hidden{
+      display: none;
+}
+
+
+
+#footer {
+  background-color: #e9e6f0;
+  padding: 50px 0;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer-left p {
+  color: #666;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-right .social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  color: #000;
+}
+
+.footer-right .social-icons i:hover {
+  color: #444;
+  cursor: pointer;
+}
+
+#footer hr {
+  margin: 30px auto;
+  width: 90%;
+  border: 1px solid #ccc;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.footer-links ul li {
+  cursor: pointer;
+  color: #222;
+}
+
+.footer-links ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #222;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 6px;
+  background:
+    conic-gradient(from 135deg at top,currentColor 90deg, #0000 0) 0 calc(50% - 4px)/17px 8.5px,
+    radial-gradient(farthest-side at bottom left,#0000 calc(100% - 6px),currentColor calc(100% - 5px) 99%,#0000) top right/50%  50% content-box content-box,
+    radial-gradient(farthest-side at top        ,#0000 calc(100% - 6px),currentColor calc(100% - 5px) 99%,#0000) bottom   /100% 50% content-box content-box;
+  background-repeat: no-repeat;
+  animation: l11 1s infinite linear;
+}
+@keyframes l11{ 
+  100%{transform: rotate(1turn)}
+}
+
 

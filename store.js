@@ -1,10 +1,20 @@
 
 
 function handleSearch(){
+      loadingAnimationToggle(true);
       const searchInputElement = document.getElementById('search-input-field');
       const searchInputValue = searchInputElement.value;
       console.log(searchInputValue);
       loadPhone(searchInputValue);
+}
+
+const loadingAnimationToggle = (isLoading)=>{
+      const loaderAnimation = document.getElementById("loader-animation");
+      if(isLoading){
+            loaderAnimation.classList.remove("hidden");
+      }else{
+            loaderAnimation.classList.add("hidden");
+      }
 }
 
 const loadPhone = async(searchText)=>{
@@ -12,6 +22,8 @@ const loadPhone = async(searchText)=>{
  const serverData = await res.json();
  displayPhone(serverData.data)
 }
+
+
 
 
 const displayPhone = (data)=>{
@@ -30,12 +42,13 @@ const displayPhone = (data)=>{
             </p>
             <div class="card-price">
                   <span>$</span>
-                  <span class="card-price-price">${siglePhone.slug}</span>
+                  <span class="card-price-price">999</span>
             </div>
             <div class="card-button">
                   <button class="btn">Show Details</button>
             </div>
             `;
             cardContainer.appendChild(productCard);
+            loadingAnimationToggle(false);
       });
 }

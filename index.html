@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/f192da94a3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f192da94a3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -20,40 +23,55 @@
     </header>
     <main>
       <!-- heighlight section -->
-       <section id="highlight-section">
-            <h2>Apple Iphone 13 pro max</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur, nesciunt delectus perspiciatis assumenda possimus sunt aut reprehenderit cupiditate tempore optio voluptatibus corrupti deleniti, dignissimos maxime ex asperiores eum mollitia?</p>
-            <div id="buy-now-btn">
-                  <button class="btn">Buy Now</button>
-            </div>
-       </section>
-       <!-- Cover Image Section -->
-       <section id="cover-image-section">
-            <img src="./asset/cover-image.png" alt="Iphone">
-       </section>
-       <!-- Search Section -->
-        <section id="search-section">
-          <h2>Search Your Phone</h2>
-          <div id="search-container">
-            <div id="search-bar">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input id="search-input-field" type="text" placeholder="Search Your Phone">
-            </div>
-            <div id="search-button">
-              <button onclick="handleSearch()" class="btn">Search</button>
-            </div>
+      <section id="highlight-section">
+        <h2>Apple Iphone 13 pro max</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          consectetur, nesciunt delectus perspiciatis assumenda possimus sunt
+          aut reprehenderit cupiditate tempore optio voluptatibus corrupti
+          deleniti, dignissimos maxime ex asperiores eum mollitia?
+        </p>
+        <div id="buy-now-btn">
+          <button class="btn">Buy Now</button>
+        </div>
+      </section>
+      <!-- Cover Image Section -->
+      <section id="cover-image-section">
+        <img src="./asset/cover-image.png" alt="Iphone" />
+      </section>
+      <!-- Search Section -->
+      <section id="search-section">
+        <h2>Search Your Phone</h2>
+        <div id="search-container">
+          <div id="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              id="search-input-field"
+              type="text"
+              placeholder="Search Your Phone"
+            />
           </div>
-        </section>
+          <div id="search-button">
+            <button onclick="handleSearch()" class="btn">Search</button>
+          </div>
+        </div>
+      </section>
+      <!-- Spinner Section -->
+      <section id="loading-section">
+        <!-- loading spinner -->
+        <div id="loader-animation" class="loader hidden"></div>
+      </section>
       <!-- Card Section -->
-       <section id="card-section">
+      <section id="card-section">
         <!-- card-01 -->
         <div class="card">
           <div class="card-image">
-            <img src="./asset/iphone-img.png" alt="iphone-img">
+            <img src="./asset/iphone-img.png" alt="iphone-img" />
           </div>
           <h3 class="card-title">Iphone 13 Pro Max</h3>
           <p class="card-description">
-            There are many variations of passages of available, but the majority have suffered
+            There are many variations of passages of available, but the majority
+            have suffered
           </p>
           <div class="card-price">
             <span>$</span>
@@ -66,11 +84,12 @@
         <!-- card-02 -->
         <div class="card">
           <div class="card-image">
-            <img src="./asset/iphone-img.png" alt="iphone-img">
+            <img src="./asset/iphone-img.png" alt="iphone-img" />
           </div>
           <h3 class="card-title">Iphone 13 Pro Max</h3>
           <p class="card-description">
-            There are many variations of passages of available, but the majority have suffered
+            There are many variations of passages of available, but the majority
+            have suffered
           </p>
           <div class="card-price">
             <span>$</span>
@@ -83,11 +102,12 @@
         <!-- card-03 -->
         <div class="card">
           <div class="card-image">
-            <img src="./asset/iphone-img.png" alt="iphone-img">
+            <img src="./asset/iphone-img.png" alt="iphone-img" />
           </div>
           <h3 class="card-title">Iphone 13 Pro Max</h3>
           <p class="card-description">
-            There are many variations of passages of available, but the majority have suffered
+            There are many variations of passages of available, but the majority
+            have suffered
           </p>
           <div class="card-price">
             <span>$</span>
@@ -97,7 +117,64 @@
             <button class="btn">Show Details</button>
           </div>
         </div>
-       </section>
+      </section>
+      <!-- Footer Section -->
+      <footer id="footer">
+        <div class="footer-container">
+          <!-- Left -->
+          <div class="footer-left">
+            <h2>My API Store</h2>
+            <p>Learn How to use API Store</p>
+          </div>
+
+          <!-- Right (Social + Button) -->
+          <div class="footer-right">
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <button class="btn">Join Premium</button>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Link Columns -->
+        <div class="footer-links">
+          <ul>
+            <li><a href="#search-section">Products</a></li>
+            <li><a href="#search-section">Browse Jobs</a></li>
+            <li><a href="#search-section">Remote Jobs</a></li>
+            <li><a href="#search-section">Company Jobs</a></li>
+            <li><a href="#search-section">Startup Jobs</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#search-section">Products</a></li>
+            <li><a href="#search-section">Browse Jobs</a></li>
+            <li><a href="#search-section">Remote Jobs</a></li>
+            <li><a href="#search-section">Company Jobs</a></li>
+            <li><a href="#search-section">Startup Jobs</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#search-section">Products</a></li>
+            <li><a href="#search-section">Browse Jobs</a></li>
+            <li><a href="#search-section">Remote Jobs</a></li>
+            <li><a href="#search-section">Company Jobs</a></li>
+            <li><a href="#search-section">Startup Jobs</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#search-section">Products</a></li>
+            <li><a href="#search-section">Browse Jobs</a></li>
+            <li><a href="#search-section">Remote Jobs</a></li>
+            <li><a href="#search-section">Company Jobs</a></li>
+            <li><a href="#search-section">Startup Jobs</a></li>
+          </ul>
+        </div>
+      </footer>
     </main>
     <script src="./store.js"></script>
   </body>
